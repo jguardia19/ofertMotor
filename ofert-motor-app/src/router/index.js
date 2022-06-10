@@ -25,7 +25,31 @@ Vue.use(Router)
           layout : 'dashboard-layout'
         },
         component: () => import('../view/Dashboard.vue')
-    },
+       },
+       {
+        path:'/status/usuarios',
+        name:'statusUsuarios',
+        meta:{
+          layout : 'dashboard-layout'
+        },
+        component: () => import('../view/Status/Usuarios.vue')
+       },
+       {
+        path:'/typeUsers',
+        name:'typeUsers',
+        meta:{
+          layout : 'dashboard-layout'
+        },
+        component: () => import('../view/TypeUsers.vue')
+       },
+       {
+        path:'/Usuarios',
+        name:'Usuarios',
+        meta:{
+          layout : 'dashboard-layout'
+        },
+        component: () => import('../view/Usuarios.vue')
+       },
     
    
   ]
